@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Greet = (props:any) => {
+type GreetProps = {
+      name?: string
+}
+const Greet = (props:GreetProps) => {
   return (
-    <div>Hello</div>
+    <div>Hello {props.name} </div>
   )
 }
 
