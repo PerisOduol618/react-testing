@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "npm test --coverage --watchAll --collectiveCoverageFrom='src/container/**/*.{ts, tsx}' --collectiveCoverageFrom='!src/container/**/*.{types,stories,constants,spec }.{ts, tsx}'"
   },
   "eslintConfig": {
     "extends": [
